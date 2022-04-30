@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<title></title>
 	</head>
 	<body>
-		<h5>测试12345</h5>
+		<button type="button" id="btn">播放</button>
+		<audio src="李玉刚-赤伶.mp3" id="player">
+			当前浏览器不支持audio
+		</audio>
 	</body>
 </html>
+<script type="text/javascript">
+	document.getElementById("btn").onclick=()=>{
+		document.getElementById("player").play();
+	};
+</script>
