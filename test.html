@@ -5,14 +5,15 @@
 		<title></title>
 	</head>
 	<body>
-		<button type="button" id="btn">播放</button>
+		
 		<audio src="李玉刚-赤伶.mp3" id="player">
 			当前浏览器不支持audio
 		</audio>
 	</body>
 </html>
 <script type="text/javascript">
-	document.getElementById("btn").onclick=()=>{
+	window.onload=()=>{
+		console.log("onload");
 		document.getElementById("player").play();
 	};
 </script>
